@@ -1,0 +1,33 @@
+======Get_TabOnTop======
+读取当前标签页的属性。
+
+
+===参数===
+  * //无//
+
+
+====JSON 源码====
+
+===命令===
+<code>
+{
+  "Get_TabOnTop":{}
+}
+</code>
+
+===结果（示例）===
+<code>
+{
+  "Result":{
+    "command":"Get_TabOnTop",
+    "status":"success",
+    "values":{
+      "tabhandle":245977421,
+      "ontop":true,
+      "changed":false,
+      "locked":false,
+      "caption":"357 Magnum",
+      "file":"C:/files/357 Magnum.grtload"
+    }
+  }
+</code>

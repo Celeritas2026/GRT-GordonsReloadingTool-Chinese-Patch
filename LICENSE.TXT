@@ -1,0 +1,123 @@
+IMPORTANT NOTE: This is a translated file, decisive is the original file in German.
+======License Agreement======
+This is not a sales contract, but a license agreement! **This
+Product is COST FREE (priceless)** and is offered to you under the following
+License Agreement which specifies what you may and/or allowed to do with this
+product. Furthermore, the liability terms and claims for damages are hereby
+regulated.
+
+====Important====
+**Please read this license agreement carefully before using it.
+You start working with the product. With the use of the product
+you automatically declare that you have read the license agreement and that
+that you agree to all the terms of this agreement.
+If you do not agree to the license agreement, please uninstall
+product or during the installation and the question whether you want to use the
+License terms agree "No" or "Cancel". The software will then be terminated
+and/or not installed **
+
+=====1. License agreement=====
+GORDONS RELOADING CHANNEL provides you with a software product (in a
+archive or another data carrier) that contains a computer program,
+a license agreement ("License") and the accompanying documents (in total
+the "Product") and allows you to use the product according to the
+license agreement. The copyright and all other rights to the
+Product remain with GORDONS RELOADING CHANNEL. Copies you make,
+must contain all original copyrights and product notes.
+
+=====2. What you are allowed to do:=====
+  * a) use the product on one or more computers or networks.
+
+  * b) use the product by several persons at a time, regardless of the actual
+       number of original copies of the program belonging to the product.
+
+  * c) make one or more copies of the Program for your archive or backup; and
+
+  * d) pass on the program to one or more other persons, but only if all
+       original copyrights and product notes are included and if the other
+       person agrees to the terms of this license agreement
+
+=====3. You are not allowed to:=====
+  * a) sold or offer the Product as a paid service, unless otherwise agreed in
+       writing between you and GORDONS RELOADING CHANNEL.
+
+  * b) Use or copy the Product other than as permitted in this License Agreement;
+
+  * c) reverse engineer, decompile or disassemble the Program, except to the
+       extent that such restrictions are expressly waived by applicable law,
+       written permission is granted by GORDONS RELOADING CHANNEL, or expressly
+       permitted in the intended components ("Files") of the Product;
+
+  * d) rent, loan, assign or transfer the Product except as provided above; and
+
+  * e) Change the program or insert it completely or partially into another
+       program.
+
+
+=====4. Duration:=====
+This license is valid for the entire duration of your use of the Product.
+However, it will expire if you breach any of these agreements or terms. If this
+is the case, you agree to immediately destroy all copies of the Product.
+However, the limitations of liability set forth below remain in effect even
+if the license agreements have expired.
+
+=====5. Warranty and liability limitations:=====
+The product will be delivered/provided to you on the basis of its current
+condition. There are no warranties or conditions, neither explicitly nor
+implicitly. This also includes warranty claims. with regard to the sales
+quality, saleability or suitability for a particular purpose, or those served
+by applicable law, legal regulations, business use or commercial traffic.
+but is not limited to them. The entire risk in relation to on the results and
+performance of the program is up to you. Neither we, nor our dealers or
+suppliers have any liability to you or to any other person or entity, or
+institution for any indirect, incidental, special, consequential, or Damage
+or any consequential damage. This also applies to damages from loss of profit,
+lost or data or for other commercial or economic purposes, or for any other
+purpose. Losses, even if we are aware of the possibility of such damage.
+or were foreseeable, or for any claims that may arise from the use of this
+product. Third. In any case, our liability, and that of our dealers and
+Supplier, limited to the amount you have paid for the product.
+The limitations of liability set forth herein shall apply independently of
+whether the alleged or actual breach of contract is a breach of contract, or
+fundamental condition or contractual agreement, or an agreement that is not
+is a fundamental breach of contract. Some states or countries not allow
+a disclaimer or limitation of liability for consequential damages.
+It may therefore be that the limitations of liability mentioned here
+do not apply to you in whole or in part.
+
+USE AT YOUR OWN RISK! THIS PRODUCT DO NOT REPLACE LOADING TABLES, REFERENCE
+BOOKS AND MANUFACTURER RECOMMENDATIONS! THE DISPLAYED/CALCULATED RESULTS MUST
+BE COMPARED WITH CURRENT CHARGING TABLES AND CHARGING RECOMMENDATIONS OF THE
+MANUFACTURERS OF THE COMPONENTS USED! ANY LIABILITY AND WARRANTY RESULTING
+DIRECTLY OR INDIRECTLY FROM THE USE OF THESE PROGRAMS AND THEIR CALCULATIONS
+IN THE EVENT OF NEGLIGENCE IS EXCLUDED.
+
+THE CALCULATION RESULTS CAN BE INCORRECT! THE CALCULATED PRESSURES AND
+VELOCITIES CAN DEVIATE GREATLY FROM THE ACTUAL MEASURED VALUES.
+
+NO ASSURANCES/GUARANTEES ARE GIVEN AS TO THE SUITABILITY OF THE INFORMATION
+PROVIDED BY THE PROGRAM OR DOCUMENTS CONTAINED THEREIN. THE PRODUCT AND RELATED
+DOCUMENTS AND DATA ARE "AS IS" AND ARE PROVIDED "AS IS" WITHOUT WARRANTIES
+OF ANY KIND, EITHER EXPRESS OR IMPLIED. TO THE EXTENT PERMITTED BY APPLICABLE
+LAW, ALL WARRANTIES, EXPRESS OR IMPLIED, ARE DISCLAIMED, INCLUDING BUT
+NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT.
+
+=====6. General:=====
+This license is the entire contractual agreement between
+GORDONS RELOADING CHANNEL and you. This puts all the other verbal or
+written contracts or agreements and may only be changed by a written
+and signed contract.
+The License Agreement shall be determined and drafted in accordance with
+the laws of the Federal Republic of Germany. If any term of this license
+agreement declared as unlawful or unenforceable by a court of competent
+jurisdiction, such declaration shall be deemed to have been terms excluded
+from the license agreement. However, all other the terms remain in force.
+
+=====7. Manufacturer/Contact:=====
+GORDONS RELOADING CHANNEL (Gordon, private person)
+gordon@grtools.de
+https://www.grtools.de
+https://youtube.com/GordonsReloading
+
+Copyright (c) Gordons Reloading Channel, all rights reserved

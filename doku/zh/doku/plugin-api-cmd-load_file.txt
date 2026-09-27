@@ -1,0 +1,1 @@
+======Load_File======在当前窗口中将 .grtload 文件加载到新标签页。如果该文件已被加载，则仅激活相应的标签页。===参数===  * //filepath// - 文件路径。====JSON 源=======命令===<code>{  "Load_File":{    "filepath":"C:/loads/357 Mag 3N37 JSP 4217.grtload"  }}</code>===结果（示例）===<code>{  "Result":{    "command":"Load_File",    "status":"success",  }}</code>

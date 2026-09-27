@@ -1,0 +1,27 @@
+======Close_ChunkStream======
+关闭数据流。
+
+===参数===
+  * //chunkStreamHandle// - ChunkStream 的句柄。
+
+====JSON 源码====
+
+===命令===
+<code>
+{
+  "Close_ChunkStream":{
+    "chunkStreamHandle":"7835152"
+  }
+}
+</code>
+
+===结果（示例）===
+<code>
+{
+  "Result":{
+    "command":"Close_ChunkStream",
+    "status":"success",
+    "values":null
+  }
+}
+</code>

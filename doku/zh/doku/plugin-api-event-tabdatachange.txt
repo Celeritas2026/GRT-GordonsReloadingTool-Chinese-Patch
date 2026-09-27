@@ -1,0 +1,1 @@
+======Event_TabDataChange======标签页中的输入值发生更改后，此事件会发送给插件。可在插件清单中启用/停用此事件。===取值===  * **//(integer) windowhandle//** - 当前 GRT 主窗口的窗口句柄  * **//(integer) tabhandle//** - 当前激活标签页（装药数据文件）的标签页句柄  * **//(string) varname//** - 被更改数值的名称===JSON 源（示例）===<code>{  "Event_TabDataChange":{    "windowhandle":531876,    "tabhandle":120858727,    "varname":"gdepth"  }}</code>

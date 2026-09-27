@@ -1,0 +1,35 @@
+======Get_Tab======
+读取标签页的属性。
+
+===参数===
+  * //tabhandle// - 标签页的句柄。
+
+
+====JSON 源码====
+
+===命令===
+<code>
+{
+  "Get_Tab":{
+    "tabhandle":159930475
+  }
+}
+</code>
+
+===结果（示例）===
+<code>
+{
+  "Result":{
+    "command":"Get_Tab",
+    "status":"success",
+    "values":{
+      "tabhandle":159930475,
+      "ontop":true,
+      "changed":false,
+      "locked":false,
+      "caption":"357 Mag 3N37 JSP 4217",
+      "file":"C:/loads/357 Mag 3N37 JSP 4217.grtload"
+    }
+  }
+}
+</code>

@@ -1,0 +1,66 @@
+======开发团队======
+
+^ Gordon  | **团队负责人/主开发**，\\ 内弹道形式理论与算法，\\ GUI 与服务器应用程序编程，\\ 网站与编程，\\ 项目管理，\\ GUI 设计，\\ GRT 实验室（DE），\\ 发射药模型开发|
+^ Charlie Sears  | GRT 实验室（US），\\ 发射药模型开发，\\ GRT 调试，\\ 网站调试， \\ 弹道测量 |
+
+====开发支持与项目合作 ====
+^ Alliwyn (Peregrine Bullets)  | 弹头摩擦研究 |
+^ Barney,Andi   | //"Universal Bullet Classification Scheme" (UBCS)//（通用弹头分类体系）子项目的用户界面方案、开发、管理与支持  |
+^ Casper Nienaber  | 项目合作，用于发射药模型开发的弹道测量 |
+^ DerMozart (Johannes)  | 发行与社区管理负责人 |
+^ Hackstock (Stefan)  | 数据库工具、数据采集、基于软件的数据评估 |
+^ Hannes  | 数学模型开发支持 |
+^ Heiko   | 核心服务 Java API 编程 |
+^ John Perry  | GRT 实验室（US）：\\ 专业精细发射药照片 |
+^ Johannes Rapprich  | 矢量工具栏图标 |
+^ Lukáš Souček (Explosia) | Lovex 实验室数据 |
+
+====翻译====
+^  南非荷兰语  | Alliwyn (Peregrine Bullets)  |
+^  捷克语      | Lukáš Souček (Explosia)  |
+^  荷兰语      | John (mus)   |
+^  法语        | Matthieu Gouey   |
+^  意大利语    | Armando Fabbian  |
+^  波兰语      | Wozzi  |
+^  俄语        | Boris Trubachev (rusniper), Yuriy (Numbat)  |
+^  乌克兰语    | Mykola Hryhoryan  |
+
+====数据采集、评估与测试====
+
+  * Ausbilder (Christian Kasparek) - https://www.ausbildung-bds.de/
+  * Berni84
+  * cox (Ralf)
+  * Darkness (Tassilo)
+  * Estragon78
+  * FiberMan
+  * Flojoe
+  * Fritz109
+  * Hunter19
+  * in Glock we trust
+  * JoHo (Joachim)
+  * Kustus
+  * MasterToSch
+  * Mfg
+  * M.Hopeman
+  * cox (Ralf)
+  * michi6383 (Michael)
+  * Nukular (Klaus)
+  * pgj (Peter)
+  * Raik
+  * ruiz124
+  * scorpac
+  * shkrauh
+  * SintoraZ (Dominik)
+  * SRM (Sirko)
+  * Stefan
+  * test85 (Constantin)
+  * torsi
+  * WiederladerTV (Markus)
+  * Wolverine
+  * Veerplant (Sören)
+  * zottelhase (Markus)
+  * ...
+
+..以及更多许多帮助者与支持者！
+
+感谢来自 [[https://youtube.com/eisenfell||"Let`s Shoot Show"]] 的 Marc 在其 Discord 服务器上提供并支持的各种交流渠道，同样感谢来自 [[https://youtube.com/WiederladerTV|WiederladerTV]] 的 Markus 的宣传与支持！

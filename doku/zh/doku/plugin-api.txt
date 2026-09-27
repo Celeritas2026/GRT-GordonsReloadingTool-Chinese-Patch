@@ -1,0 +1,120 @@
+======Plugin-API======
+
+GRT 为扩展功能提供了一个动态插件接口。
+
+===什么是 GRT 插件？===
+GRT 插件是独立的可执行程序或脚本。启动时，插件文件夹中所有已启用的插件都会被集成到主程序中。
+
+为此，GRT 与每个插件之间通过 [[https://en.wikipedia.org/wiki/Inter-process_communication|IPC]]（Inter Process Communication，进程间通信）建立通信通道。IPC 是同一系统上不同程序之间常见的连接方式。插件和 GRT 都不需要互联网连接。使用 IPC 时，连接仅限于本地计算机。
+
+因此，插件只是通过通信通道与 GRT 松散耦合。如果插件作者愿意，也可以把插件设计成可脱离 GRT 独立使用。
+
+===插件存放在哪里/安装在哪里？===
+要让 GRT 识别插件，插件必须位于 //子目录// **//"plugins"//** 中。例如插件位于
+
+  * //C:/Applications/GordonsReloadingTool/plugins///
+
+===插件需要满足哪些条件？===
+  * 插件必须可执行。即它必须能够作为程序或脚本独立运行。
+  * 插件必须能够识别并处理启动时指定的**命令行参数**。
+  * 插件必须能够建立与 GRT 通信的**套接字连接**。
+    * **Linux 下：** Unix 域套接字
+    * **Windows 下：** TCP 套接字\\ 由于 Windows 下没有 Unix 域套接字，因此使用普通 TCP 套接字。GRT 打开的是一个经过特殊配置的 TCP 套接字，它不允许互联网连接，因此不会触发防火墙警告。
+
+====插件的目录结构====
+每个插件位于一个单独的文件夹中。文件夹名称应唯一，以避免与其他插件冲突，此外没有其他含义。
+
+一个插件目录通常包含以下文件和文件夹：
+
+  * **///media//**\\ 用于存放图标或图片等媒体文件的子目录（可选，名称仅为建议）
+
+  * **//[[zh:doku:plugin-api-manifest|com.grt.plugin.xml]]//**\\ 此文件即插件的 **//清单（Manifest）//**。**此文件名是固定默认值，始终不变。** 插件清单包含插件的规格说明，还包含应由 GRT 为插件自动提供的菜单、工具栏图标等的定义。 
+
+  * **//plugin.exe//**\\ 插件本身，即可执行文件（名称任意），此处为 Windows 版。插件也可以支持多个平台，可执行文件的位置在插件清单中定义。因此插件可执行文件在插件文件夹内的存放位置可自由选择。
+
+=====插件与 GRT 的集成=====
+当插件存放到 GRT 插件文件夹后，GRT 会在启动时读取所有插件的 //插件清单//。
+根据插件清单中的配置，GRT 会为插件创建或配置所有已定义的预期行为、菜单项和工具栏图标。
+
+插件定义的菜单会以插件名称出现在 GRT 的“插件”菜单中，插件定义的所有菜单项则作为其子菜单显示。插件定义的菜单可以按需嵌套任意层级。
+
+随后，视操作系统而定，插件清单中定义的可执行文件将携带命令行参数启动。插件须使用命令行中给出的连接参数，通过 **//套接字连接（Socket-Connect）//** 接入 GRT。插件清单中可以指定 **超时（Timeout）**，一旦出错，GRT 侧将取消连接尝试。
+
+**另见：[[zh:doku:plugin-api-manifest|插件清单]]**
+
+====插件启动的命令行参数====
+GRT 按如下方式携带命令行参数启动插件：
+==Windows==
+  plugin.exe --ipcport <port number>
+在 Windows 下为 TCP 套接字的端口。例如指定端口 **49771** 时，到 GRT 的连接地址为：**//localhost:49771//** 或 **//127.0.0.1:49771//**。
+
+== Linux ==
+  plugin --ipcfile <filepath>
+在 Linux 下为 Unix 域套接字连接文件的路径。
+
+====连接类型====
+插件可配置为与 GRT 保持**持续**连接，或仅在**用户交互**时才启动。对于与 GRT 持续连接的插件，若插件断开连接，其工具栏图标将被**禁用**（变灰），其菜单项也将失效。
+
+只要 GRT 正在运行，插件在连接中断后就可以使用上次指定的连接信息自动重连到 GRT。工具栏图标和菜单随后会自动重新启用。
+
+
+=====通信（API）=====
+插件与 GRT 之间通过套接字连接交换数据包进行通信。数据以纯文本形式按照 [[https://en.wikipedia.org/wiki/JSON|JSON 表示法]] 封装，并附带相应的结构规范。
+
+  * **数值**以**十进制**表示。
+  * **字符串**以 [[https://en.wikipedia.org/wiki/UTF-8|UTF8 格式]] 纯文本表示，必要时也可进行 [[https://en.wikipedia.org/wiki/Percent-encoding|URL 编码]]。
+
+==重要==
+由于技术原因，数据包可能丢失。这意味着插件发送命令后，必须确保 GRT 对其**应答包**进行了**处理**。若未收到应答，插件应能识别这种情况并重新执行该命令。
+
+==错误数据包==
+对于检测为错误的数据包，GRT 会向插件回传错误消息及描述。
+
+=====事件与功能=====
+GRT 会将插件清单中**启用的所有事件**发送给插件。也就是说，如果插件启用了标签页切换事件（用户点击/切换标签页），那么用户在 GRT 中点击某个标签页时，事件消息就会自动发送给插件。
+
+====事件列表====
+
+**事件****不**要求插件确认。事件无需应答消息。事件发生时，会发送给所有在其清单中启用了该事件的插件。
+
+注意：此处“标签页（Tab）”指 GRT 中的标签页或其对应的装药数据文件。
+
+  * [[zh:doku:plugin-api-event-attached|Event_Attached]] - 插件已接入
+  * [[zh:doku:plugin-api-event-colorpresetchange|Event_ColorPresetChange]] - 配色方案已更改
+  * [[zh:doku:plugin-api-event-menuaction|Event_MenuAction]] - 菜单项被点击
+  * [[zh:doku:plugin-api-event-toolbaraction|Event_ToolbarAction]] - 工具栏图标被点击
+  * [[zh:doku:plugin-api-event-tabclosed|Event_TabClosed]] - 标签页被用户关闭
+  * [[zh:doku:plugin-api-event-tabcomputed|Event_TabComputed]] - 仿真已重新计算
+  * [[zh:doku:plugin-api-event-tabdatachange|Event_TabDataChange]] - 标签页数据已更改
+  * [[zh:doku:plugin-api-event-tabswitch|Event_TabSwitch]] - 用户点击了（另一个）标签页
+  * [[zh:doku:plugin-api-event-tabunitchange|Event_TabUnitChange]] - 计量单位已更改
+  * [[zh:doku:plugin-api-event-windowactivate|Event_WindowActivate]] - 一个 GRT 主窗口（含标签页的窗口）已被激活/置于前台
+  * [[zh:doku:plugin-api-event-windowclosed|Event_WindowClosed]] - 一个 GRT 主窗口已关闭
+  * [[zh:doku:plugin-api-event-windowdeactivate|Event_WindowDeactivate]] - 一个 GRT 主窗口被置于后台
+  * [[zh:doku:plugin-api-event-windowmaximize|Event_WindowMaximize]] - 一个 GRT 主窗口已最大化
+  * [[zh:doku:plugin-api-event-windowminimize|Event_WindowMinimize]] - 一个 GRT 主窗口已最小化
+  * [[zh:doku:plugin-api-event-windowmoved|Event_WindowMoved]] - 一个 GRT 主窗口已被移动
+  * [[zh:doku:plugin-api-event-windowresized|Event_WindowResized]] - 一个 GRT 主窗口已调整大小
+  * [[zh:doku:plugin-api-event-windowrestore|Event_WindowRestore]] - 一个 GRT 主窗口已从最大化/最小化状态恢复
+
+====功能（命令）列表====
+
+===Close（关闭）===
+  * [[zh:doku:plugin-api-cmd-close_chunkstream|Close_ChunkStream]] - 关闭数据流
+===Get（读取）===
+  * [[zh:doku:plugin-api-cmd-get_chunk|Get_Chunk]] - 读取数据流的一部分
+  * [[zh:doku:plugin-api-cmd-get_colorpresets|Get_ColorPresets]] - 所有配色方案的列表
+  * [[zh:doku:plugin-api-cmd-get_colorpreset|Get_ColorPreset]] - 读取配色方案
+  * [[zh:doku:plugin-api-cmd-get_tab|Get_Tab]] - 读取指定标签页的属性
+  * [[zh:doku:plugin-api-cmd-get_tablist|Get_TabList]] - 读取包含所有标签页属性的列表
+  * [[zh:doku:plugin-api-cmd-get_tabontop|Get_TabOnTop]] - 读取活动（焦点）标签页的属性
+  * [[zh:doku:plugin-api-cmd-get_tabresults|Get_TabResults]] - 读取指定标签页的仿真结果
+
+
+
+
+
+
+
+
+

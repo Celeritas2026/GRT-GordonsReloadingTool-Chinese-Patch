@@ -1,0 +1,1 @@
+======Event_ToolbarAction======点击插件的工具栏按钮时，此事件会发送给插件。此事件无法关闭。===取值===  * **//(integer) windowhandle//** - 当前 GRT 主窗口的窗口句柄  * **//(string) id//** - 被点击按钮的 ID  * **//(string) label//** - 被点击按钮的文本===JSON 源（示例）===<code>{  "Event_ToolbarAction":{    "windowhandle":531876,    "id":"com.grt.plugin.tester.toolbar_button1",    "label":"Example Plugin"  }}</code>

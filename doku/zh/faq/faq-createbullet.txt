@@ -1,0 +1,7 @@
+====== 如何在 GRT 中添加尚不存在的新弹头，以及如何对它进行测量？ ======
+
+回答者：Charlie
+
+{{zh:faq:media:faq-create-bullet1.png?direct&100%|}}
+
+{{zh:faq:media:faq-create-bullet2.png?direct&100%|}}

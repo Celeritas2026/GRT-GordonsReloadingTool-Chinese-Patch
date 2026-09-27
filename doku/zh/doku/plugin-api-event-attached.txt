@@ -1,0 +1,1 @@
+======Event_Attached======每次插件执行/启动后，此事件会发送给插件。此事件无法停用。===取值===  * **//(integer) windowhandle//** - 当前 GRT 主窗口的窗口句柄  * **//(string) languagecode//** - GRT 当前运行所用语言的 language code===JSON 源（示例）===<code>{  "Event_Attached":{    "windowhandle":"531876"    "languagecode":"en"  }}</code>

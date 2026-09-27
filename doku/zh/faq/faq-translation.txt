@@ -1,0 +1,48 @@
+====== 操作指南：把 GRT 程序翻译成其他语言 ======
+===回答者：Gordon===
+
+感谢你参与翻译工作。请使用下面这个内置的翻译工具：
+
+在 GRT 中点击“帮助”（Help）菜单，选择“翻译应用程序”（Translate Application），即可打开翻译工具：
+
+{{zh:faq:media:faq-translation-1.png?direct&600|}}
+
+然后点击 “Destination Language”（目标语言）后面的空白按钮，在上下文菜单中选择（例如）法语
+
+{{zh:faq:media:faq-translation-2.png?direct&600|}}
+
+接下来先在“文件”（File）菜单里选择“另存为”（Save as），把 fr.locale 文件保存到你以后能找到的地方
+这就是你之后应发给我、以便编译进源码的文件；有了它，你也可以随时中断翻译、以后继续。
+选定目标语言后，你会看到所有待翻译字符串的列表：
+
+{{zh:faq:media:faq-translation-3.png?direct&600|}}
+
+你可以展开每个分类，查看其中的字符串条目：
+
+{{zh:faq:media:faq-translation-4.png?direct&600|}}
+
+钢笔图标表示该字符串尚未翻译；如果是分类图标，则表示该分类下还有未完成的字符串
+要翻译某个条目，只需在下方文本框中输入译文。 
+
+  * **务必注意**不要遗漏原文中使用的任何控制字符，例如括号/花括号。
+  * **切勿**翻译花括号内的文字，例如 //{value}//!
+
+
+{{zh:faq:media:faq-translation-5.png?direct&600|}}
+
+较长的文本可以先复制。要把文本从源文本框复制到译文文本框，请点击上方文本框，然后按键盘上的 CTRL-A 全选：
+
+{{zh:faq:media:faq-translation-6.png?direct&600|}}
+
+然后按 CTRL-C 复制到剪贴板，再点击下方文本框，用 CTRL-V 粘贴文本。
+
+{{zh:faq:media:faq-translation-7.png?direct&600|}}
+
+全部完成后，点击 “next”（下一个）或 “Next unprocessed”（下一个未处理）按钮，即可继续处理下一条。
+请经常按 “CTRL-S” 或菜单项“保存”（save）随时保存
+
+注意：你创建的翻译不会立即在程序中生效，必须先编译进源码；也就是说，你要把完成的 “fr.locale” 文件发给我，由我来集成。之后我可以给你一个包含该翻译的 GRT 测试版。
+
+如果以后需要修改你的翻译，可以随时、不限版本地进行，然后再次把 “fr.locale” 文件发给我。
+
+翻译整本手册则是另一回事。文档翻译可以在 grtools.de 网站上在线完成。

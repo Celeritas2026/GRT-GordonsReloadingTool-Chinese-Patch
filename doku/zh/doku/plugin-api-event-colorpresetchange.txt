@@ -1,0 +1,1 @@
+======Event_ColorPresetChange======每次更改配色方案后，会发送此事件。可在插件清单中启用/停用此事件。===取值===  * **//(integer) ColorPresetId//** - 新的/已更改配色方案的 ID===JSON 源（示例）===<code>{  "Event_Attached":{    "ColorPresetId":133424  }}</code>

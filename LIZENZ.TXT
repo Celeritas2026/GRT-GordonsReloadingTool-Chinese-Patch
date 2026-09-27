@@ -1,0 +1,139 @@
+======Lizenzvereinbarung======
+Dies ist kein Kaufvertrag, sondern eine Lizenzvereinbarung! Dieses
+Produkt ist KOSTENLOS und wird Ihnen unter der folgenden Lizenzvereinbarung
+zur Verfügung gestellt, welche festlegt, was Sie mit diesem Produkt tun dürfen.
+Ferner werden hiermit die Haftungsbestimmungen und Schadensersatzansprüche
+geregelt.
+
+Wichtig: Bitte lesen Sie diese Lizenzvereinbarung sorgfältig durch, bevor
+Sie anfangen mit dem Produkt zu arbeiten. Mit der Benutzung des Produkts
+erklären Sie automatisch, daß Sie die Lizenzvereinbarung gelesen haben und
+das Sie mit allen Punkten dieser Vereinbarung einverstanden sind.
+Sollten Sie mit der Lizenzvereinbarung nicht einverstanden sein, deinstallieren
+Sie das Produkt bzw. wählen bei der Installation und der Frage, ob Sie mit den
+Lizenzbestimmungen einverstanden sind "Nein" bzw. "Abbruch". Die Software wird
+dann beendet bzw. nicht installiert.
+
+
+=====1. Lizenzvereinbarung=====
+GORDONS RELOADING CHANNEL liefert Ihnen ein Softwareprodukt (in einem
+Archiv oder ein anderer Datenträger) das ein Computerprogramm enthält,
+eine Lizenzvereinbarung ("Lizenz") und die dazugehörigen Dokumente (insgesamt
+das "Produkt") und erlaubt Ihnen, das Produkt entsprechend der
+Lizenzvereinbarung zu verwenden. Das Copyright und alle anderen Rechte am
+Produkt bleiben bei GORDONS RELOADING CHANNEL. Kopien die Sie anfertigen,
+müssen alle originalen Copyrights und Produktanmerkungen enthalten.
+
+=====2. Was Sie dürfen:=====
+  * a) das Produkt auf ein oder mehreren Computern oder Netzwerken verwenden;
+
+  * b) das Produkt von mehreren Person zur Zeit, unabhängig von der
+     tatsächlichen Anzahl der Originalkopien des Programms, die zu dem Produkt
+     gehören, anwenden;
+
+  * c) ein oder mehrere Kopien des Programms für Ihr Archiv oder als Backup
+     anfertigen; und
+
+  * d) das Programm an eine oder mehrere andere Personen weitergeben, allerdings
+     nur dann, wenn alle originalen Copyrights und Produktanmerkungen enthalten
+     sind und wenn die andere Person sich mit den Bedingungen dieser
+     Lizenzvereinbarung einverstanden erklärt;
+
+
+=====3. Sie dürfen nicht:=====
+  * a) das Produkt verkaufen oder als kostenpflichtigen Dienst anbieten, es sei
+  denn es wurde eine anderslautende, schriftliche Vereinbarung zwischen Ihnen
+  und GORDONS RELOADING CHANNEL getroffen;
+
+  * b) das Produkt anders als in dieser Lizenzvereinbarung erlaubt anwenden
+  oder kopieren;
+
+  * c) das Programm zurückentwickeln ("reverse engineering"), dekompilieren oder
+  entassemblieren, es sei denn, die genannten Einschränkungen werden durch
+  geltendes Recht ausdrücklich aufgehoben, eine schriftliche Genehmigung durch
+  GORDONS RELOADING CHANNEL erteilt, oder in dafür vorgesehenen Komponenten
+  ("Dateien") des Produktes ausdrücklich erlaubt;
+
+  * d) das Produkt ausser zu den oben genannten Bedingungen vermieten,
+  verleihen, überlassen oder übertragen; und
+
+  * e) das Programm verändern oder komplett oder teilweise in ein anderes
+  Programm einfügen.
+
+
+=====4. Dauer:=====
+Diese Lizenz gilt für die gesamte Zeitdauer Ihrer Verwendung des Produkts.
+Sie wird allerdings hinfällig, sobald Sie gegen irgendeine dieser
+Vereinbarungen oder Bedingungen verstoßen. Sollte dies der Fall sein,
+erklären Sie sich einverstanden, alle Kopien des Produkts unverzüglich zu
+vernichten. Die unten genannten Haftungsbeschränkungen
+bleiben allerdings weiter in Kraft, auch wenn die Lizenzvereinbarungen
+hinfällig geworden sind.
+
+
+=====5. Garantie- und Haftungsbeschränkungen:=====
+Das Produkt wird Ihnen auf der Grundlage des gegenwärtigen Zustands zur
+Verfügung gestellt. Es gibt keine Garantien oder Bedingungen,
+weder ausdrücklich noch implizit. Dies schliesst auch Garantieansprüche
+bezüglich der Verkaufsqualität, Verkäuflichkeit oder Eignung für
+einen bestimmten Zweck aus, oder solche, die durch geltendes Recht,
+gesetzliche Vorschriften, Geschäftsgebrauch oder Handelsverkehr verursacht
+werden, beschränkt sich aber nicht auf diese. Das gesamte Risiko in Bezug
+auf die Ergebnisse und die Leistung des Programms liegt bei Ihnen.
+Weder wir noch unsere Händler oder Zulieferer haben irgendeine
+Haftungsverpflichtung Ihnen oder irgendeiner anderen Person oder
+Institution gegenüber für jedwede indirekte, zufällige, besondere
+Schäden oder irgendwelche Folgeschäden.
+Dies gilt auch für Schäden an Gesundheit und Leben, aus entgangenem Gewinn,
+verlorenen oder beschädigten Daten oder für andere kommerzielle oder
+wirtschaftliche Verluste, selbst dann, wenn wir auf die Möglichkeit derartiger
+Schäden hingewiesen wurden oder diese vorhersehbar waren, oder für Ansprüche
+Dritter. Auf jeden Fall ist unsere Haftung, und die unserer Händler und
+Zulieferer, auf den Betrag beschränkt, den Sie für das Produkt bezahlt
+haben. Die hier festgelegten Haftungsbeschränkungen gelten unabhängig
+davon, ob der vermeintliche oder tatsächliche Vertragsbruch eine
+grundsätzliche Bedingung oder Vertragsvereinbarung berührt, oder ein
+grundsätzlicher Vertragsbruch ist. Einige Staaten oder Länder erlauben
+einen Haftungsausschluss oder eine Haftungsbeschränkung für Folgeschäden
+nicht. Es kann daher sein, dass die hier genannten Haftungsbeschränkungen
+auf Sie insgesamt oder teilweise nicht zutreffen.
+
+NUTZUNG AUF EIGENE GEFAHR! DIESES PRODUKT ERSETZT KEINE LADETABELLEN,
+FACHBÜCHER UND HERSTELLEREMPFEHLUNGEN! DIE ANGEZEIGTEN/BERECHNETEN ERGEBNISSE
+MÜSSEN MIT AKTUELLEN LADETAFELN UND LADEEMPFEHLUNGEN DER HERSTELLER DER
+VERWENDETEN KOMPONENTEN ABGEGLICHEN WERDEN! ES WIRD JEGLICHE HAFTUNG UND
+GEWÄHRLEISTUNG AUSGESCHLOSSEN DIE AUS DER NUTZUNG DIESES PRODUKTS UND DEREN
+BERECHNUNGEN DIREKT ODER INDIREKT AUCH IM FALLE VON FAHRLÄSSIGKEIT ENTSTEHEN.
+
+DIE BERECHNUNGSERGEBNISSE KÖNNEN FEHLERHAFT SEIN! DIE BERECHNETEN DRÜCKE UND
+GESCHWINDIGKEITEN KÖNNEN VON REAL GEMESSENEN WERTEN STARK ABWEICHEN.
+
+ES WIRD KEINE ZUSICHERUNGEN ÜBER DIE EIGNUNG DER DURCH DAS PRODUKT ODER
+ENTHALTENE DOKUMENTE BEREITGSTELLTEN INFORMATIONEN ABGEGEBEN. DAS PRODUKT
+SOWIE ZUGEHÖRIGE DOKUMENTE UND DATEN SIND "SO WIE SIE SIND" UND WERDEN OHNE
+JEGLICHE AUSDRÜCKLICHE ODER STILLSCHWEIGENDE GARANTIEN BEREITGESTELLT. SOWEIT
+NACH GELTENDEM RECHT ZULÄSSIG, WERDEN ALLE AUSDRÜCKLICHEN ODER
+STILLSCHWEIGENDEN GARANTIEN ABGELEHNT EINSCHLIEßLICH ABER NICHT BESCHRÄNKT
+AUF STILLSCHWEIGENDE GARANTIEN DER MARKTGÄNGIGKEIT UND EIGNUNG FÜR EINEN
+BESTIMMTEN ZWECK, DES EIGENTUMS UND DER NICHTVERLETZUNG VON RECHTEN.
+
+=====6. Allgemeines:=====
+Diese Lizenz ist die gesamte vertragliche Vereinbarung zwischen
+GORDONS RELOADING CHANNEL und Ihnen. Sie setzt alle anderen mündlichen oder
+schriftlichen Verträge oder Vereinbarungen ausser Kraft und kann nur durch
+einen schriftlichen und unterzeichneten Vertrag verändert werden.
+Die Lizenzvereinbarung wird bestimmt und aufgesetzt in übereinstimmung mit
+den Gesetzen der Bundesrepublik Deutschland. Falls irgendeine Bestimmung
+dieser Lizenzvereinbarung durch ein ordentliches Gericht für ungültig,
+ungesetzlich oder undurchführbar erklärt werden sollte, wird diese
+Bestimmung von der Lizenzvereinbarung ausgenommen. Alle anderen
+Bestimmungen bleiben aber weiter in Kraft.
+
+
+=====7. Hersteller/Kontakt:=====
+GORDONS RELOADING CHANNEL (Gordon, Privatperson)
+gordon@grtools.de
+https://www.grtools.de
+https://youtube.com/GordonsReloading
+
+Copyright (c) Gordons Reloading Channel, all rights reserved

@@ -1,0 +1,9 @@
+======检查器（Inspector）======
+{{ zh:media::overview-inspector.png?&link}}
+检查器是标签页下方的一行文字。它显示有关输入字段的有用信息或简短的一般提示。
+
+====简要说明====
+{{ zh:media::overview-inspector-text.png}}
+将鼠标在字段上悬停约 1/2 秒。检查器的文字行中会显示一段简短说明。
+
+

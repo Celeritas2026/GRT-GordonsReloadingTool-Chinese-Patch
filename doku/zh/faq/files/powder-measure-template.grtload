@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<GordonsReloadingTool version='2020.1815-NIGHTLY'>
+  <InnerBallistikInput>
+    <title>6.5%20Creedmoor%20Sierra%2C%20HPBT%20MatchK%201725C%2C%200.264%2C%20120.00%20grain%20Vihtavuori%20N540</title>
+    <config name="CurveFocusIdx" value="0" unit="" type="integer" descr="selected ladder curve for display" />
+    <caliber>
+      <input name="CaliberName" value="6.5%20Creedmoor" unit="" type="string" descr="caliber name" />
+      <input name="oal" value="69.849999999999994" unit="mm" type="decimal" descr="cartridge overall length" />
+      <input name="caselen" value="48.770000000000003" unit="mm" type="decimal" descr="case length" />
+      <input name="casevol" value="3.399051634336941" unit="cm3" type="decimal" descr="case volume" />
+      <input name="Dz" value="6.7056" unit="mm" type="decimal" descr="groove caliber" />
+      <input name="Aeff" value="34.659999999999997" unit="mm2" type="decimal" descr="effektive area" />
+      <input name="pMaxZul" value="4350" unit="bar" type="decimal" descr="maximum allowed pressure" />
+      <input name="method" value="Piezo CIP" unit="" type="string" descr="cartridge test method" />
+      <input name="sebert" value="0.5" unit="" type="decimal" descr="Sebert factor" />
+      <input name="ps" value="250.00389945026618" unit="bar" type="decimal" descr="initial gas pressure" />
+      <input name="shotshell" value="false" unit="" type="boolean" descr="true if shotshell" />
+    </caliber>
+    <caliberfile>
+      <var name="cipname" value="6.5%20Creedmoor" />
+      <var name="altname" value="" />
+      <var name="standard" value="CIP" />
+      <var name="ciporigin" value="US" />
+      <var name="ciptype" value="1%20rimless" />
+      <var name="cipdate" value="2012-05-30" />
+      <var name="ciprevdate" value="1900-01-01" />
+      <var name="cippdf" value="https%3A%2F%2Fbobp.cip-bobp.org%2Fuploads%2Ftdcc%2Ftab-i%2F6-5-creedmoor-en.pdf" />
+      <var name="L0" value="0.00" />
+      <var name="L1" value="37.84" />
+      <var name="L2" value="41.52" />
+      <var name="L3" value="48.77" />
+      <var name="L4" value="0.00" />
+      <var name="L5" value="0.00" />
+      <var name="L6" value="71.76" />
+      <var name="R" value="1.37" />
+      <var name="R1" value="12.01" />
+      <var name="R3" value="0.00" />
+      <var name="E" value="3.84" />
+      <var name="E1" value="10.39" />
+      <var name="Emin" value="1.40" />
+      <var name="delta" value="36.00" />
+      <var name="FG" value="0.00" />
+      <var name="beta" value="35.00" />
+      <var name="P0" value="0.00" />
+      <var name="P1" value="11.95" />
+      <var name="P2" value="11.74" />
+      <var name="alpha" value="60.00" />
+      <var name="S" value="48.01" />
+      <var name="r1min" value="0.76" />
+      <var name="r2" value="3.18" />
+      <var name="H1" value="7.49" />
+      <var name="H2" value="7.49" />
+      <var name="G1" value="6.72" />
+      <var name="G2" value="0.00" />
+      <var name="f" value="0.38" />
+      <var name="L3G" value="58.42" />
+      <var name="Pmax" value="4350.00" />
+      <var name="PK" value="5003.00" />
+      <var name="PE" value="5438.00" />
+      <var name="EE" value="3400.00" />
+      <var name="V" value="53.80" />
+      <var name="M" value="25" />
+      <var name="sebert" value="0.50" />
+      <var name="c_alpha" value="60.00" />
+      <var name="c_alpha1" value="90.00" />
+      <var name="c_E" value="3.84" />
+      <var name="c_G" value="9.65" />
+      <var name="c_G1" value="6.72" />
+      <var name="c_H1" value="7.54" />
+      <var name="c_H2" value="7.52" />
+      <var name="c_h_" value="0.40" />
+      <var name="c_i_" value="1.50" />
+      <var name="c_L0" value="0.00" />
+      <var name="c_L1" value="37.76" />
+      <var name="c_L2" value="41.42" />
+      <var name="c_L3" value="48.90" />
+      <var name="c_P0" value="0.00" />
+      <var name="c_P1" value="11.98" />
+      <var name="c_P2" value="11.76" />
+      <var name="c_R" value="0.00" />
+      <var name="c_R1" value="12.01" />
+      <var name="c_r1max" value="0.76" />
+      <var name="c_R2" value="0.00" />
+      <var name="c_r2_" value="3.18" />
+      <var name="c_R3" value="0.00" />
+      <var name="c_r_" value="0.00" />
+      <var name="c_S" value="47.95" />
+      <var name="c_s_" value="5.45" />
+      <var name="c_w_" value="0.00" />
+      <var name="c_F" value="6.50" />
+      <var name="c_Z" value="6.71" />
+      <var name="c_b_" value="2.29" />
+      <var name="c_N" value="6.00" />
+      <var name="c_u_" value="203.00" />
+      <var name="c_Q" value="34.66" />
+      <var name="c_delta" value="0.00" />
+      <var name="c_Fe" value="0.10" />
+      <var name="c_Fe_proof" value="0.00" />
+      <var name="c_Fe_auto" value="0.00" />
+      <var name="cdate" value="2020-06-21" />
+      <var name="cby" value="GRT" />
+      <var name="mdate" value="" />
+      <var name="mby" value="" />
+      <var name="type" value="" />
+      <var name="mode" value="" />
+      <var name="status" value="" />
+      <var name="origin" value="cip-bobp.org" />
+      <var name="descr" value="" />
+    </caliberfile>
+    <gun>
+      <input name="xe" value="609.59999999999991" unit="mm" type="decimal" descr="barrel length" />
+      <input name="twistlen" value="203" unit="mm" type="decimal" descr="twist length" />
+      <input name="mgun" value="4.989516070000001" unit="kg" type="decimal" descr="gun weight" />
+    </gun>
+    <projectile>
+      <input name="ProjectileName" value="Sierra%2C%20HPBT%20MatchK%201725C%2C%200.264%2C%20120.00%20grain" unit="" type="string" descr="projectile name" />
+      <input name="mname" value="" unit="" type="string" descr="projectile manufacturer" />
+      <input name="pname" value="" unit="" type="string" descr="projectile product name" />
+      <input name="lotid" value="" unit="" type="string" descr="projectile lot-id" />
+      <input name="Dbul" value="6.7056" unit="mm" type="decimal" descr="projectile diameter" />
+      <input name="mp" value="7.775869199970489" unit="g" type="decimal" descr="projectile weight" />
+      <input name="gdepth" value="9.298399999999999" unit="mm" type="decimal" descr="bullet seating depth" />
+      <input name="glen" value="30.378399999999996" unit="mm" type="decimal" descr="projectile overall length" />
+      <input name="gtailh" value="3.990339999999998" unit="mm" type="decimal" descr="projectile tail length" />
+      <input name="gTailDiaA" value="6.710679999999999" unit="mm" type="decimal" descr="projectile tail diameter A" />
+      <input name="gTailDiaB" value="4.699" unit="mm" type="decimal" descr="projectile tail diameter B" />
+      <input name="gTailType" value="2" unit="" type="decimal" descr="projectile base type" />
+      <input name="gmaterial" value="0" unit="" type="decimal" descr="projectile material and gas sealing/losses" />
+      <input name="g1bc" value="0" unit="" type="decimal" descr="G1 ballistic coefficient" />
+      <input name="g7bc" value="0" unit="" type="decimal" descr="G7 ballistic coefficient" />
+      <input name="gUBCS" value="T0H1B2S4N1" unit="" type="string" descr="UBCS-Code (Universal Bullet Classification Scheme)" />
+      <input name="mode" value="" unit="" type="string" descr="" />
+    </projectile>
+    <propellant>
+      <input name="mname" value="Vihtavuori" unit="" type="string" descr="propellant manufacturer" />
+      <input name="pname" value="N540" unit="" type="string" descr="propellant product name" />
+      <input name="lotid" value="2020-08-01" unit="" type="string" descr="propellant lot-id" />
+      <input name="Ba" value="0.5816" unit="" type="decimal" descr="vivacity coefficient" />
+      <input name="Qex" value="4000" unit="kJ/kg" type="decimal" descr="specific explosive heat" />
+      <input name="k" value="1.2131" unit="" type="decimal" descr="ratio of the specific heat of the powder gases" />
+      <input name="a0" value="1.4074" unit="" type="decimal" descr="prog/deg coefficient" />
+      <input name="z1" value="0.4882" unit="" type="decimal" descr="burn-up limit z1" />
+      <input name="z2" value="0.8341" unit="" type="decimal" descr="burn-up limit z2" />
+      <input name="eta" value="1" unit="cm3/kg" type="decimal" descr="covolume of the powder gases" />
+      <input name="pc" value="1620" unit="kg/m3" type="decimal" descr="material density" />
+      <input name="pcd" value="940" unit="kg/m3" type="decimal" descr="bulk density" />
+      <input name="pt" value="21" unit="Cel" type="decimal" descr="temperature normal" />
+      <input name="tcc" value="0" unit="" type="decimal" descr="cold temperature coefficient" />
+      <input name="tch" value="0" unit="" type="decimal" descr="hot temperature coefficient" />
+      <input name="po" value="98066.5" unit="Pa" type="decimal" descr="technical atmosphere pressure" />
+      <input name="mc" value="2.656755309989917" unit="g" type="decimal" descr="propellant mass" />
+      <input name="laddercnt" value="5" unit="" type="decimal" descr="ladder steps (1 to 10, below 2: disabled)" />
+      <input name="laddermc" value="0.064798909999754" unit="g" type="decimal" descr="ladder step propellant mass" />
+      <input name="imageUuid" value="" unit="" type="string" descr="propellant picture uuid" />
+    </propellant>
+    <appendix>
+      <note index="1" hasfocus="true" showinreport="true" reporttemplate="false" title="HOW%20TO%20USE" text="Dear%20GRT%20user%0D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0DTo%20keep%20the%20powder%20models%20up%20to%20date%2C%20or%20to%20calibrate%20new%20powder%20models%2C%0Dwe%20need%20continiously%20your%20measurements%20%28at%20least%20velocity%29%21%20%0D%0DJust%20create%2Fadd%20a%20measurement%20tab%20to%20your%20grtload-file%20and%20enter%2Fimport%20all%0Dresults%20you%20have.%20Additional%20informations%20are%20welcome%2C%20like%20fill%20rate%0Dcorrection%2C%20burn-up%20behavior%2C%20brass%20prictures%2C%20pressure%20signs%20or%20something%20like%20that.%0D%0D----------------------------------------------------------------------%0DPlease%20use%20the%20GRTLab-Plugin%20for%20uploading%20your%20files%20to%20our%20lab.%0DAlternatively%20please%20send%20it%20to%3A%20data%40grtools.de%0D----------------------------------------------------------------------%0DVERY%20IMPORTANT%3A%0D-%20%22please%20measure%20and%20enter%20case%20volume%20of%20a%20FIRED%20CASE%22%0D-%20%22please%20measure%20and%20enter%20the%20real%20bullet%20length%22%0D----------------------------------------------------------------------%0D%0DIf%20you%20want%20us%20to%20create%20a%20non%20yet%20existing%20powder%20model%2C%20then%20make%20at%20least%0Dtwo%20recommended%20loads%20%28e.g.%20min%2Fmax%29%20with%20two%20different%20bullet%20weights%20%0D%28jacketed%20bullets%20only%29%20and%20choose%20just%20a%20random%20powder%20as%20placeholder%2C%20and%0Dplease%20denote%20in%20the%20file%20name%20for%20which%20powder%20your%20measurements%20are.%0D%0DThank%20you%20very%20much%20for%20your%20support%20and%20contribution%21%0DIt%27s%20from%20you%20for%20all%2C%20and%20from%20all%20for%20you%21%0Dhttps%3A%2F%2Fwww.patreon.com%2Fgordonsreloading%0D" selstart="0" sellength="0" scrollposition="0" config="%7Bfeatures%2C1%2C1%2C0%2Cnoname.txt%2C%2C%3B%3A%3C%3E%28%29%5B%5D%7B%7D%22%22%27%C2%B4%60%7C%5E%C2%B0%3D%7E%2C1%2C1%2C0%2C1%2C1%2C1%2C1%2C%250D%2C%2C0%2C1%2C1000%2C-1%2C0%2C1%2C1%2C1%2C4%2C1%2C13%2C0%2C0%2C0%2C0%2C1%2C0%2C4%7D%2C%7Bstyle%2C%7D%2C%7Bedit%2C0%2C26%2C-1%2C-1%2C-1%2C-1%2C0%2C0%7D" />
+      <Measurement index="3" showinreport="true" title="MEASUREMENTS">
+        <charge name="Charge%201" showinreport="true" expanded="true" note="EXAMPLE%20ONLY%21%20DO%20NOT%20USE%20THIS%20LOAD" value="0.002462358579991" menu="" menuvalue="" menuunit="m" source="" sourceoptions="%7B%7D">
+          <shot name="" velocity="844.60080000000607" pressure="0" />
+          <shot name="" velocity="850.08720000000608" pressure="0" />
+          <shot name="" velocity="847.95360000000608" pressure="0" />
+          <shot name="" velocity="850.39200000000608" pressure="0" />
+        </charge>
+        <charge name="Charge%202" showinreport="true" expanded="true" note="EXAMPLE%20ONLY%21%20DO%20NOT%20USE%20THIS%20LOAD" value="0.00265675530999" menu="" menuvalue="" menuunit="m" source="" sourceoptions="%7B%7D">
+          <shot name="" velocity="906.47520000000645" pressure="0" />
+          <shot name="" velocity="906.17040000000645" pressure="0" />
+          <shot name="" velocity="908.91360000000645" pressure="0" />
+          <shot name="" velocity="907.69440000000645" pressure="0" />
+          <shot name="" velocity="908.30400000000645" pressure="0" />
+        </charge>
+      </Measurement>
+    </appendix>
+  </InnerBallistikInput>
+</GordonsReloadingTool>

@@ -1,0 +1,106 @@
+====== 用户手册与指南 ======
+这是内弹道仿真软件 **“Gordons Reloading Tool”**（简称 **“GRT”**）的文档与用户手册。
+
+**使用本软件前请务必仔细阅读！**
+
+=====GRT 是什么？=====
+{{ zh:media::grt-logo-512x512-transparent.png?30%}}
+**Gordons Reloading Tool（“GRT”）**是一款面向手工复装者和弹药设计者的软件。
+它通过弹道参数和公式模拟燃烧特性、膛压和弹头速度。
+
+**GRT** 的目的是为手工复装者和弹药设计者提供开发装药的辅助手段，避免过量装药、枪支解体/碎裂和/或人身伤害。
+
+**主要功能**
+  * 个性化装药数据
+  * 弹头数据库
+  * 发射药数据库
+  * 符合 CIP 标准的口径规范（含自动生成的图纸）
+  * 下载并查看官方口径规范文档
+  * 计算结果的自定义报告输出（含打印）
+  * 计量单位换算与自定义设置
+  * 检测输入错误的检查器（Inspector）
+  * 输入字段快速帮助
+  * 输入向导
+  * 装药阶梯（含图表同步显示，可交互）
+  * 后坐力与冲量自动计算
+  * 发射药对比表
+  * 参数化发射药搜索
+  * 装药量通用公差综合
+  * 枪管截面积计算
+  * 黑火药计算器
+  * 在装药数据文件中保存笔记、图片或其他数据
+  * 弹着散布分析
+  * 最优枪管时间（OBT）自动化工具
+  * 支持 PressureTrace II：将实测膛压曲线与仿真曲线叠加显示
+  * 支持 Caldwell、LabRadar、MagnetoSpeed 与 ProChrono 导入
+  * ...
+
+=====目录=====
+====总体====
+  * **[[zh:doku:license|许可证（EULA）]]**
+  * **[[zh:doku:safetynotes|安全须知]]**
+
+  * **[[zh:doku:preamble|前言]]**
+  * **[[zh:doku:formalism|内弹道模型、发射药建模与数据来源]]**
+
+====使用====
+  * [[zh:doku:install|系统要求与安装]]
+  * [[zh:doku:firststart|快速上手]]
+  * [[zh:doku:overview-compact|概览 - 紧凑模式]]
+  * [[zh:doku:overview-expert|概览 - 专家模式]]
+
+  * [[zh:doku:toolbar|工具栏/图标栏与主菜单]]
+  * [[zh:doku:tabs|主标签页（文件）]]
+  * [[zh:doku:resulttabs|结果区标签页]]
+  * [[zh:doku:inspector|检查器（Inspector）]]
+
+====数据输入====
+  * **[[zh:doku:inputfields|数据输入的一般使用说明]]**
+    * [[zh:doku:inputfields-caliber|口径/枪弹]]
+    * [[zh:doku:inputfields-projectile|弹头]]
+    * [[zh:doku:inputfields-propellant|发射药]]
+
+====数据输出====
+  * **[[zh:doku:outputfields|输出与结果字段]]**
+  
+====工具与助手====
+  * {{zh:media:icon:icn_mono_caliber_db_32x32.png}}[[zh:doku:dbcaliber|口径数据库]]
+  * {{zh:media:icon:icn_mono_projectile_db_32x32.png}}[[zh:doku:dbprojectile|弹头数据库]]
+  * {{zh:media:icon:icn_mono_propellant_db_32x32.png}}[[zh:doku:dbpropellant|发射药数据库]]
+  * {{zh:media:icon:icn_mono_calculator_32x32.png}}[[zh:doku:unitcalculator|计量单位换算]]
+  * {{zh:media:icon:icn_mono_table_heatmap_32x32.png}}[[zh:doku:burnratechart|发射药相对燃速对照表]]
+  * {{zh:media:icon:icn_mono_laufprofil_32x32.png}}[[zh:doku:assist-aeffcalculator|口径/枪管有效截面积计算器]]
+  * {{zh:media:icon:icn_mono_cannon_32x32.png}}[[zh:doku:bpcalculator|黑火药计算器]]
+  * {{zh:media:icon:icn_mono_target_holes_32x32.png}}[[zh:doku:shotgroup|弹着散布分析]]
+  * {{zh:media:icon:icn_mono_obt_32x32.png}}[[zh:doku:obtconcept|最优枪管时间（OBT）]]
+  * {{zh:media:icon:icn_mono_chart_propellant_32x32.png}}[[zh:doku:ppsearch|参数化发射药搜索与通用公差综合]]
+  * {{zh:media:icon:icn_mono_cartridge_draft_32x32.png}}[[zh:doku:cartridgedesigner|枪弹设计器]]
+  
+  * {{zh:media:icon:icn_star_yellow_32x32.png}} [[zh:doku:assist-aeffcalculator|助手“有效截面积”]]
+  * {{zh:media:icon:icn_star_yellow_32x32.png}} [[zh:doku:assist-projectile-tail|助手“弹尾”]]
+  * {{zh:media:icon:icn_star_yellow_32x32.png}} [[zh:doku:assist-initialpressure|助手“初始压力”]]
+  * {{zh:media:icon:icn_star_yellow_32x32.png}} [[zh:doku:assist-powdermass|助手“装药量”]]
+  * {{zh:media:icon:icn_star_yellow_32x32.png}} [[zh:doku:assist-powdertempcoeff|发射药温度系数助手]]
+
+====报告====
+  * {{zh:media:icon:icn_mono_textdoc_dia_32x32.png}} [[zh:doku:report|结果报告]]
+  * [[zh:doku:report-info|自建报告帮助]]
+
+====插件====
+  * {{zh:plugin:grtlab:media:grtlab-logo-32x32.png?nolink|}}[[zh:plugin:grtlab:plugin-grtlab|GRTLab 插件]]
+  * {{zh:plugin:grtrace:media:icn_grtrace_32x32.png?nolink|}}[[zh:plugin:grtrace:plugin-grtrace|GRTrace 插件]]
+
+  * {{zh:media::icon:icn_plugin_32x32.png}}[[zh:doku:plugin-api|插件 API（接口说明）]]（面向开发者）
+
+====UBCS====
+  * [[zh:doku:ubcs|通用弹头分类体系（UBCS）]]
+
+====文件格式====
+  * [[zh:doku:file_caliber|口径文件]] //( *.xml, *.caliber )//
+  * [[zh:doku:file_projectile|弹头文件]] //( *.xml, *.projectile )//
+  * [[zh:doku:file_propellant|发射药文件]] //( *.xml, *.propellant )//
+  * [[zh:doku:file_result|仿真结果]] //( *.xml )//
+
+====团队====
+  * [[zh:doku:devteam|开发团队]]
+  * [[zh:doku:contact|联系方式]]

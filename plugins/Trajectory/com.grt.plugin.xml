@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<GordonsReloadingTool>
+<!--
+GRT plugin manifest
+
+Plugin configuration <plugin>
+The attribute "id" must be begin with the domain "com.grt.plugin" and is
+usually extended by a unique, alphanumeric name without spaces for your plugin.
+
+The attribute "enabled" activates or deactivates the plugin. If "false" the
+plugin is ignored at startup.
+
+The attributes "launch-windows" and "launch-linux" defines the executable of
+the plugin. The executables can be placed in a sub-folder also. In this case
+just add the local directory path like "bin\plugin.exe" for windows or
+"bin/plugin" for linux. At least ONE of both attributes must contain a valid
+executable file. The Plugin fails to load if no file for the specific OS is
+specified.
+
+The attribute "launch-type" configures the launch method for the plugin.
+With value "permanent" the plugin is executed at startup and permanent attached
+to the GRT (default). With Value "onDemand", the plugin is launched if a
+user-action take place and it is not yet running. The plugin can terminate
+itself after finish a process and will be then launched again on next
+user-action.
+
+If you are using a script language that runs on windows and linux e.g. python,
+then just enter in BOTH attributes the same file.
+
+-->
+
+  <plugin
+	name           = "外弹道计算器"
+	id             = "com.grt.plugin.extbal"
+	version        = "1.0"
+	provider       = "Berni84"
+    description    = "此插件计算弹头外弹道。"
+    launch-windows = "GRT_Trajectory_Plugin.exe"
+    launch-type    = "onDemand"
+    launch-args    = ""
+    start-timeout  = "0.0"
+    enabled        = "true"
+  >
+    <!-- launch-linux   = "plugin-grtrace"-->
+<!--
+Registering to GRT events
+each event you turn on with value "true" will be sent to your plugin when the
+the event occours.
+
+NOTE: ONLY TURN EVENTS ON THAT YOU ARE REALY NEED, OTHERWISE IT CAN AFFECT
+THE PERFORMANCE OF THE GRT IN CASE OF MANY PLUGINS ACTIVE.
+
+The events here are only for example purpose all activated.
+-->
+    <registerevent>
+	  <event name="Attached" enabled="false" />
+      <event name="ColorPresetChange" enabled="true" />
+      <event name="TabSwitch" enabled="true" />
+      <event name="TabDataChange" enabled="false" />
+      <event name="TabUnitChange" enabled="false" />
+	  <event name="TabComputed" enabled="true" />
+      <event name="TabClosed" enabled="false" />
+      <event name="WindowActivate" enabled="false" />
+      <event name="WindowDeactivate" enabled="false" />
+      <event name="WindowMaximize" enabled="false" />
+      <event name="WindowMinimize" enabled="false" />
+      <event name="WindowRestore" enabled="false" />
+      <event name="WindowMoved" enabled="false" />
+      <event name="WindowResized" enabled="false" />
+      <event name="WindowClosed" enabled="true" />
+      <event name="FileSave" enabled="false" />
+    </registerevent>
+
+<!--
+Menu integration
+You can as many menuitems and submenus define as you want.
+The main tag <menu> is the main menuitem only that are created with the name
+of your plugin defined above. <menu> has the attributes "autoenable" and "icon"
+only. If autoenable="true" the GRT auto-enables the menu items in
+the GRT menu integration for you. Otherwise you have to alter each
+menuitem yourself to enable/disable it (using the menuitem command).
+
+Each <menuitem> can be a submenu by inserting more <menuitem>-tags.
+Each <menuitem> must have the attributes "id" and "label".
+The attribute "id" is appended to the plugin-id defined above and will be
+sent to the plugin if a menuaction event occours.
+(same for toolbar-icons/buttons down below)
+
+-->
+    <menu autoenable="true" icon="media/icons/icn_ebc_16_mono.png" icon_colorize="true">
+      <menuitem id="start" label="弹道插件" enabled="true" checked="false" icon="media/icons/icn_ebc_16_mono.png"/>
+    </menu>
+
+<!--
+Toolbar integration
+You can as many toolbar-icons/buttons define as you want.
+Also separators can be added with <separator />.
+Each Toolbar-Icon have to be 32 x 32 pixels and the GRT overlays a small plugin-icon in the
+right bottom corner to indicate the toolbar-icon/button as plugin.
+-->
+    <toolbar>
+      <toolbaritem
+        id            = "toolbar_main"
+        label         = "弹道插件"
+        tooltip       = "基于 GRT 计算的弹头外弹道计算插件。"
+        icon          = "media/icons/icn_ebc_32_mono.png"
+        icon_colorize = "true"
+        enabled       = "true"
+      />
+    </toolbar>
+
+  </plugin>
+</GordonsReloadingTool>

@@ -1,0 +1,59 @@
+======安装与首次启动======
+
+Gordons Reloading Tool（GRT）是一款[[https://de.wikipedia.org/wiki/Portable_Software|便携软件]]，以压缩包形式发布。压缩包包含所有必需的文件和组件。
+
+**重要提示：必须先解压压缩包才能启动 GRT！不能在压缩包内直接运行 GRT！**
+
+====安装====
+将压缩包解压（EXTRACT）到您选择的文件夹，例如 "C:\"。也可以将解压后的文件复制到 U 盘并从那里运行程序。 
+
+在程序中所做的设置保存在 GRT 程序目录下的 //GordonsReloadingTool.cfg// 文件中。
+
+====GRT 压缩包文件（下载文件）====
+GRT 压缩包通常具有以下结构（以 Windows 为例）：
+
+  * **//GordonsReloadingTool-<version>//**
+    * //**/doku**// - 用于文档文件和程序所用模板的目录。
+    * //**/libs**// - 程序库目录
+    * //**/loads**// - （示例）实验室文件/装药数据文件目录
+    * //**/Resources**// - 程序语言文件目录
+    * //GordonsReloadingTool.cfg// - 配置文件，程序将其设置保存在此文件中。
+    * //GordonsReloadingTool.db// - 本地数据库
+    * //GordonsReloadingTool.exe// - 程序文件
+    * //LICENSE.TXT// - 许可证（英文）
+    * //LIESMICH.TXT//
+    * //LIZENZ.TXT// - 原始许可证（德文）
+    * //README.TXT// 
+
+====系统要求====
+^  分辨率:|  HD 1080p  |
+^  存储空间:|  100 MB  |
+^  工作内存（RAM）:|  1 GB  |
+^  操作系统:|  Windows 或 Linux (x86/x86_64) |
+
+===Windows:===
+Windows 7 SP1、Vista、8.1、10，32 或 64 位。
+
+===Linux:===
+  * **推荐：Linux Mint 20 - 64 位（Debian）**
+  
+可能需要安装所需的依赖
+（依次执行以下命令）：
+
+  $ sudo dpkg --add-architecture i386
+  $ sudo apt-get update
+  $ sudo apt-get install lib32stdc++6
+  $ sudo apt-get install libgtk2.0-0:i386
+  $ sudo apt-get install gtk2-engines-pixbuf:i386
+  $ sudo apt-get install gtk2-engines-murrine:i386
+  $ sudo apt-get install gnome-themes-extra:i386
+  $ sudo apt-get install libcurl4-openssl-dev:i386
+
+如果您想确认所需的库，**//ldd//** 命令可以提供帮助。
+您可以在 GordonsReloadingTool 目录下从终端运行此命令，
+以列出 GordonsReloadingTool 所需的库及其在系统中的状态： 
+  ldd GordonsReloadingTool
+
+==请注意：==
+GRT 并非在 Linux 下开发，因此是一个交叉编译的应用程序，且仅在上述推荐的系统上进行了充分测试。如果 GRT 在您的发行版上运行出现问题，请查阅您的 Linux 帮助文档，了解如何在您的发行版上运行标准 32 位 Gtk 应用程序。
+

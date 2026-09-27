@@ -1,0 +1,35 @@
+======Get_ColorPreset======
+读取所有可用配色方案的列表。
+
+===参数===
+  * //无//
+
+
+====JSON 源码====
+
+===命令===
+<code>
+{
+  "Get_ColorPresets":{}
+}
+</code>
+
+===结果（示例）===
+<code>
+{
+  "Result":{
+    "command":"Get_ColorPresets",
+    "status":"success",
+    "values":[
+      {
+        "ColorPresetId":121187463,
+        "ColorPresetName":"Default"
+      },
+      {
+        "ColorPresetId":118969621,
+        "ColorPresetName":"DefaultDark"
+      }
+    ]
+  }
+}
+</code>

@@ -1,0 +1,21 @@
+====== FAQ 与操作指南 ======
+
+  * Q: [[zh:faq:faq-simaccuracy|仿真的精度如何？偏差如何评定？]]
+  * Q: [[zh:faq:faq-powderavailable|发射药 XXX 何时会在 GRT 中可用？]]
+  * Q: [[zh:faq:faq-cbto|在哪里可以找到 CBTO（弹壳底面至卵形部）的输入值？]]
+  * Q: [[zh:faq:faq-primer|是否考虑过增加所用底火的选项？]]
+  * Q: [[zh:faq:faq-calibration|估算的 V0 与实测的 V0 存在差异。应从哪个参数入手调整？]]
+  * Q: [[zh:faq:faq-casevolume|为什么要用击发后的弹壳容积？]]
+  * Q: [[zh:faq:faq-qlpowder|能否把我这份 QuickLOAD 里的发射药数据导入 GRT？]]
+  * Q: [[zh:faq:faq-another-os|GRT 将来会不会推出 Apple MAC 版、Android 应用、iOS 应用、BSD 版……等等版本？]]
+
+  * 操作指南: [[zh:faq:faq-grt-update|如何更新到较新的 GRT 版本？]]
+  * 操作指南: [[zh:faq:faq-grtlab|GRTLab —— 如何帮助维护/校核发射药模型，使其保持最新？]]
+  * 操作指南: [[zh:faq:faq-propelland-modeling|如何协助启动 GRT 中尚不存在的发射药模型的开发]]
+  * 操作指南: [[zh:faq:faq-obt-tool|如何使用 OBT 工具（最优枪管时间）]]
+  * 操作指南: [[zh:faq:faq-translation|如何把 GRT 程序翻译成其他语言]]
+  * 操作指南: [[zh:faq:faq-createwildcat|如何修改枪弹规格来创建 WildCat（改进弹）？]]
+  * 操作指南: [[zh:faq:faq-createbullet|如何在 GRT 中添加新弹头并完成其测量？]]
+
+
+

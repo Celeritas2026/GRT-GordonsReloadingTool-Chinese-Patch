@@ -1,0 +1,56 @@
+====== GRT-Plugin "GRTLab" ======
+{{zh:plugin:grtlab:media:grtlab-logo-256x256.png?nolink |}} The plugin "GRTLab" is part of every GRT version on all platforms.
+
+=====GRTLab Basics=====
+GRT provides a LAB Plugin app so users can conveniently contribute data to GRT in order to improve many of the GRT features.  Primarily it is intended to allow users to submit results of user loads with velocity and maybe pressure data as actually recorded on velocity and pressure measuring equipment.  Before a User can start to use the GRTLab he will have to have his login credentials as established at www.grtools.de.  If you are a User that came to GRT via Patreon, and did not start from the website, you will need to establish an account on the website.  The GRTLab and www.grtools.de are linked.  Once you have your credentials you may proceed to the next step of launching the GRTLab.
+
+====Launch====
+Launching the GRTLab is very easy, simply click the appropriate Menu or Toolbar icons as per this picture.
+
+{{zh:plugin:grtlab:media:grtlab-grt-toolbar.png?direct&50%|}}
+
+====Login====
+You should see a screen similar to this next picture.  Just enter your credentials from www.grtools.de and click Login.
+
+{{zh:plugin:grtlab:media:grtlab-password.png?direct&50%|}}
+
+====Root Folder====
+First time Users should be presented with a blank screen like this.
+
+{{zh:plugin:grtlab:media:grtlab-main.png?direct&50%|}}
+
+====Create a folder====
+The User should create at lease one folder appropriately named for its purpose.  Example - Development, and/or Supplemental.  "Development" for starting new propellant models, and "Supplemental" for improving existing propellant models.  These are suggested names only.
+
+{{zh:plugin:grtlab:media:grtlab-main-1.png?direct&50%|}}
+
+Similar to this sample.
+
+{{zh:plugin:grtlab:media:grtlab-main-2.png?direct&50%|}}
+
+The double click your Category folder to open it, and add a folder for the propellant you are submitting data for.  See this picture.
+
+{{zh:plugin:grtlab:media:grtlab-main-3.png?direct&50%|}}
+
+====Drag & Drop files====
+
+Once you have double clicked on the propellant named fold, simply drag and drop your .grtload file to this window.
+
+{{zh:plugin:grtlab:media:grtlab-main-6.png?direct&50%|}}
+
+====Messages====
+Once the uploads are completed, you can optionally leave a message describing the intent of the data.  There is also status column to show the progress in the processing.
+
+{{zh:plugin:grtlab:media:grtlab-main-7.png?direct&50%|}}
+
+{{zh:plugin:grtlab:media:grtlab-main-8.png?direct&50%|}}
+
+====Files====
+The User may modify files in his Lab, and if modified and saved, the save goes to the Lab.  If the User wants to keep a local copy of this file it is suggested to make a copy and save that locally.  Some times the User may have to try the download twice to establish a good connection.
+
+{{zh:plugin:grtlab:media:grtlab-main-9.png?direct&50%|}}
+
+
+{{zh:plugin:grtlab:media:grtlab-main-10.png?direct&50%|}}
+
+

@@ -1,0 +1,95 @@
+======文件格式：口径（ *.xml, *.caliber ）======
+
+口径文件是采用通用交换格式 XML 的文件。
+
+常规结构如下：
+<code>
+  <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+  <GordonsReloadingTool>
+    <caliberfile>
+      <var name="Name of the property" value="Value of the property" />
+      [...]
+    </caliberfile>
+  </GordonsReloadingTool>
+</code>
+
+  * **字符串**以纯文本或 URL 编码方式输入。
+  * **数值**以点号"."作为小数分隔符。
+  * 通过多次出现 //<InnerBallistikResult>// 块，可以包含多个口径条目。
+
+====示例：.45 Auto====
+<code>
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<GordonsReloadingTool>
+  <caliberfile>
+    <var name="cipname" value=".45%20Auto" />
+    <var name="altname" value=".45%20ACP" />
+    <var name="standard" value="CIP" />
+    <var name="ciporigin" value="US" />
+    <var name="ciptype" value="4%20pistol%2Frevolver" />
+    <var name="cipdate" value="1984-06-14" />
+    <var name="ciprevdate" value="2000-06-07" />
+    <var name="cippdf" value="tabivcal-de-page76.pdf" />
+    <var name="L1" value="0.00" />
+    <var name="L2" value="0.00" />
+    <var name="L3" value="22.81" />
+    <var name="L4" value="0.00" />
+    <var name="L5" value="0.00" />
+    <var name="L6" value="32.39" />
+    <var name="R" value="1.24" />
+    <var name="R1" value="12.19" />
+    <var name="R3" value="0.00" />
+    <var name="E" value="4.11" />
+    <var name="E1" value="10.16" />
+    <var name="Emin" value="0.89" />
+    <var name="Delta" value="26.00" />
+    <var name="FG" value="0.00" />
+    <var name="Beta" value="35.00" />
+    <var name="P1" value="12.09" />
+    <var name="P2" value="0.00" />
+    <var name="Alpha" value="0.00" />
+    <var name="S" value="0.00" />
+    <var name="r1min" value="0.00" />
+    <var name="R2" value="0.00" />
+    <var name="H1" value="0.00" />
+    <var name="H2" value="12.01" />
+    <var name="G1" value="11.48" />
+    <var name="G2" value="0.00" />
+    <var name="f" value="0.38" />
+    <var name="L3G" value="25.58" />
+    <var name="Pmax" value="1300.00" />
+    <var name="PK" value="1495.00" />
+    <var name="PE" value="1690.00" />
+    <var name="M" value="12.50" />
+    <var name="EE" value="0.00" />
+    <var name="FLauf" value="11.23" />
+    <var name="ZLauf" value="11.43" />
+    <var name="b" value="3.73" />
+    <var name="N" value="6.00" />
+    <var name="u" value="406.00" />
+    <var name="Q" value="101.33" />
+    <var name="V" value="26.00" />
+    <var name="L0" value="0.00" />
+    <var name="R0" value="0.00" />
+    <var name="P0" value="0.00" />
+    <var name="shot_alpha1" value="0.00" />
+    <var name="shot_B" value="0.00" />
+    <var name="shot_D" value="0.00" />
+    <var name="shot_G" value="0.00" />
+    <var name="shot_H" value="0.00" />
+    <var name="shot_L" value="0.00" />
+    <var name="shot_M" value="0" />
+    <var name="shot_T" value="0.00" />
+    <var name="sebert" value="0.75" />
+    <var name="cdate" value="2019-05-03" />
+    <var name="cby" value="GRT" />
+    <var name="mdate" value="" />
+    <var name="mby" value="" />
+    <var name="type" value="" />
+    <var name="mode" value="" />
+    <var name="status" value="" />
+    <var name="origin" value="cip-bobp.org" />
+    <var name="descr" value="" />
+  </caliberfile>
+</GordonsReloadingTool>
+</code>

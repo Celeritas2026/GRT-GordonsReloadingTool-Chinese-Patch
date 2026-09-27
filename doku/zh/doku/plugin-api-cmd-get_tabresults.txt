@@ -1,0 +1,61 @@
+======Get_TabResults======
+读取标签页的仿真结果。
+
+该函数提供一个用于传输的 ChunkStream，
+数据即从该流中读取。
+
+**参见：** [[zh:doku:plugin-api-cmd-get_chunk|Get_Chunk]] - 读取数据流的一部分
+
+===参数===
+  * //tabhandle// - 请求其仿真结果的标签页句柄。
+
+
+====JSON 源码====
+
+===命令===
+<code>
+{
+  "Get_TabResults":{
+    "tabhandle":132273211
+  }
+}
+</code>
+
+===结果（示例）===
+<code>
+{
+  "Result":{
+    "command":"Get_TabResults",
+    "status":"success",
+    "values":{
+      "tabhandle":132273211,
+      "chunked":true,
+      "chunkStreamHandle":7835152,
+      "chunkCount":190,
+      "data":{
+        "BurnoutInBarrel":"true",
+        "MaxPressure":"3347.4831159072783 bar",
+        "PointIdxBurnedEnergy95":"1425",
+        "PointIdxBurnout":"3922",
+        "PointIdxPmax":"268",
+        "PointIdxZ1":"234",
+        "z":"1",
+        "EndEnergy":"3984.2004144201014 joule",
+        "EndPressure":"455.89276608605616 bar",
+        "EndVelocity":"850.50579100633934 m/s",
+        "EndTime":"1.39346279789998 ms",
+        "Ekin":"4336 joule",
+        "Eprop":"0 joule",
+        "UnitInfo":{
+          "x":"mm",
+          "xp":"mm",
+          "z":"",
+          "p":"bar",
+          "v":"m/s",
+          "t":"ms"
+        }
+      }
+    }
+  }
+}
+</code>

@@ -1,0 +1,27 @@
+====== 如何修改枪弹规格来创建一支 WildCat（改进弹）？ ======
+
+==用户：==
+  我在做一种 9mm AR wildcat 枪弹。我把一支 .223 弹壳修短并消除了肩部，打算装 9mm 弹头。
+  如何在 GRT 中创建 wildcat 枪弹？
+{{zh:faq:media:223-case-without-shoulder.jpg?direct&30%|}}
+====操作指南：====
+**几点想法：** .223 弹壳比 9x19 mm 弹壳小，在我们看来其口部壁厚太薄：.355" + 2 x .012" = .379"。多数 .223 / 5.56 弹壳底径为 .373"。这样颈壁厚度只能有 .008"，仅能给弹头释放留出一点扩张量。.008" 的颈壁握不牢弹头，上膛过程中弹头会被顶退。如果能找到符合 SAAMI 最大尺寸的弹壳，比如 Starline basic brass，或者用芯棒把整个弹壳一直扩到底部，倒是有可能行得通——那样就成了 //350 Legend// 弹壳的克隆。
+
+===不过，无论如何，下面就是在 GRT 中创建你想要的 wildcat 的方法：===
+首先，每当你想知道图纸中任何符号的含义时，请查看 [[zh:doku:cartridgedesigner|这个页面]]，并一直翻到页面底部，那里解释了弹壳设计器（Cartridge Designer）和图纸中所用符号的含义。
+
+==步骤：==
+  * 1) 打开口径数据库，选择你想修改的母弹壳，在你的例子中是 //.223 Remington//:\\ {{zh:faq:media:faq-create-wildcat-01.png?direct&50%|}}
+  * 2) 右键点击并选择 "New with a copy.."（以副本新建）：\\ {{zh:faq:media:faq-create-wildcat-02.png?direct&30%|}}
+  * 3) 在弹出的窗口中输入你的枪弹名称和备用名称，然后点击 OK：\\ {{zh:faq:media:faq-create-wildcat-03.png?direct&50%|}}
+  * 4) 你的新枪弹会出现在用户数据库标签页中：\\ {{zh:faq:media:faq-create-wildcat-04.png?direct&50%|}}
+  * 5) 右键点击该条目并选择 "Edit in Cartridge Designer.."（在弹壳设计器中编辑）：\\ {{zh:faq:media:faq-create-wildcat-05.png?direct&40%|}}
+  * 6) 现在你就可以在实时图纸中编辑你的枪弹了：\\ {{zh:faq:media:faq-create-wildcat-06.png?direct&50%|}}
+  * 7) 你只需要去掉肩部，所以在图纸或列表中同时点击药室和弹壳的 "L1"，并删除对应的数值：\\ {{zh:faq:media:faq-create-wildcat-07.png?direct&50%|}}
+  * 8) 对 "L2"、"r1min"、"r1max"、"r2"、"H1"、"P2" 和 "alpha" 做同样的操作——它们基本就是肩部。现在它应该显得有点滑稽：\\ {{zh:faq:media:faq-create-wildcat-08.png?direct&50%|}}
+  * 9) 接下来把 "H2" 的直径改成你弹壳口部的外径，例如取 "P1" 的值（底径 = 平直段）；对药室也照此办理，同样把 "P1" 的值复制到 "H2"：\\ {{zh:faq:media:faq-create-wildcat-09.png?direct&50%|}}
+  * 10) 现在你需要把例如 9x19 的弹径和枪管参数复制到 "G1"、"F"、"Z"、"b"、"N"、"u"、"Q"、"i"、"alpha1" 等对应字段中，并删除 "h" 和 "s"：\\ {{zh:faq:media:faq-create-wildcat-10.png?direct&50%|}}
+  * 11) 最后一步是让 GRT 计算近似的击发后弹壳容积：点击 "Cartridge"（枪弹）标签页中弹壳容积输入框旁的计算器图标即可：\\ {{zh:faq:media:faq-create-wildcat-11.png?direct&50%|}}
+  * 完成
+
+注：这里创建的枪弹并没有什么实际意义。这只是演示操作方法的例子。 

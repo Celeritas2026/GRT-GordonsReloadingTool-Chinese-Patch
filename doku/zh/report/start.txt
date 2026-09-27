@@ -1,0 +1,1 @@
+======报告======**在这里你可以找到示例报告（模板），其中每份报告都包含你当前 grtload 文件的数据。**----  * [[report:default-full|当前装药的详细报告]]  * [[report:default-compact|当前装药的简洁报告]]  * [[report:Cartridge Drawing|枪弹参数说明]]  * [[report:Chamber Drawing|药室参数说明]]  =====你知道吗？===== 你可以向装药文件中添加自定义报告。只需在结果窗口中新增一个标签页：点击 "+" 符号，然后在上下文菜单中选择 "Add report"（添加报告）。 **另请参阅：** [[doku:report-info|创建自定义报告的帮助]]

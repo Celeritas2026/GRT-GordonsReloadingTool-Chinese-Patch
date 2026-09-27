@@ -1,0 +1,132 @@
+======内弹道模型、发射药建模与数据来源======
+=====内弹道模型=====
+GRT 所使用的内弹道模型是基于以下著作中的信息自行开发的：Rheinmetall 的 //"Waffentechnisches Taschenbuch"//(("Waffentechnisches Taschenbuch", Rheinmetall, 1977, ASIN: B002FOOB8G))、Beat P. Kneubuehl 的 //"Ballistik - Theorie und Praxis"//(("Ballistik - Theorie und Praxis", Beat P. Kneubuehl, ISBN: 978-3-662-58299-2))，以及 Richard Emil Kutterer 的 //"Ballistik"//(("Ballistik", Richard Emil Kutterer, ISBN: 978-3-663-02335-7))，同时也受到 IBHVG2 "集总参数模型"（lumped-parameter model）((("IBHVG2 - Interior Ballistics of High Velocity Guns, Version 2", ASIN: B00CQCV310))) 的影响。
+
+====不同的燃烧特性====
+不同的发射药/火药具有不同的燃烧特性，也就是说，视制造商和类型而定，发射药在建立膛压的过程中会以**不同**的速度燃烧！这类发射药要么呈增面性、要么呈减面性，或呈两者的特定组合。用于宣传发射药特性的传统术语——例如"渐进型"（progressive）和"进攻型"（offensive）——与此并不矛盾，因为即使是进攻型发射药也可以具有很强的渐增性。
+
+区分燃烧特性有助于选择发射药，为在更长的枪管中提高弹头加速度、同时保持低膛压创造了机会。
+
+=====形状函数与映射=====
+{{ zh:media::propellant-vivacity1.png?25%&link}}
+在仿真计算中，这种发射药燃烧特性通过所谓的形状函数进行数学仿真。形状函数以数学方式表示并逼近发射药在燃烧过程中的行为。
+
+**发射药特性的数学表示**基于标准化测量，例如在具有特定容积的量热弹或密闭爆发器（测压弹）中进行。随后以固定的装药量增量 delta 对某种发射药进行多次测量并记录。
+
+调整形状函数的参数，使其逼近测量曲线。随后必须使用弹道数据进行校准，因为发射药在枪械的动态过程中表现可能有所不同。
+
+{{ zh:media::propellant-vivacity2.png?25%&link}}
+**经过适配与校准后，**数学表示不一定与原始测量数据一致，因为发射药装药在动态条件下的表现与静态密闭爆发器中不同。如果没有密闭爆发器测量数据，也可以利用覆盖一定口径范围和弹头重量区间的、直接在枪管上安装测压装置所得的弹道数据，构建一个逆向推导的模型。
+
+因此，密闭爆发器测量是发射药模型最重要的初始数据之一。通常，发射药制造商出于研究和质量控制的目的进行此项测量。
+
+发射药数据中给出的 **Ba** 值是这条曲线的**起点**，曲线由两段或更多段组成。与其他软件不同，**GRT** 对燃烧行为采用**三段式**表示，以考虑多基发射药的行为，并在一定程度上兼顾当今发射药中的添加剂，例如防铜渍剂和温度稳定剂等。
+
+====发射药特性的测定====
+内弹道计算取决于这些发射药特性。测定发射药特性既可以通过热力学计算 ((Köhler et al., 2008, Akhavan, 2008))，也可以通过实验测定。大多数发射药特性的实验测定可使用 //密闭爆发器（manometric bomb）// 进行。
+
+===密闭爆发器===
+==密闭爆发器（测压弹）中的压力==
+密闭爆发器的基本思路是：将一定量的发射药 **mc** 在固定容积 **V_mb** 中燃烧。在//燃烧//过程中会达到取决于发射药种类和数量的最大压力 **p_mb**。
+<code>
+p_mb * ( V_mb - b * mc ) = mc * R * T_ex
+</code>
+**mc** 为发射药质量，**b** 为余容，**R** 为气体常数，**T_ex** 为燃气的爆温（火焰温度）（通常通过热力学方法计算）。
+
+==发射药常数、比能量==
+//比能量//（火药力）**F_se** 由气体常数 **R** 与爆温 **T_ex** 的乘积得到：
+<code>
+F_se = R * T_ex
+</code>
+此比能量表示发射药燃烧过程中的压力能，可用于转换为机械能。
+
+==Abel 方程==
+英国化学家 //F. A. Abel// 在 1874 年发表的研究和方程中提出在高压下使用通用状态方程。这就是此处不使用范德华方程的原因。在弹道学和炸药领域出现的条件下，还必须考虑气体分子的自身体积（余容 **b**）。如果装填密度 **delta** 由发射药质量 **mc** 与药室容积 **V_mb** 之比 **(mc/V_mb)** 计算得出，即可得到弹道学中著名的 //Abel 方程//：
+<code>
+p_mb = (delta * F_se) / (1 - delta * b)
+</code>
+
+===测量===
+为使各次测量之间燃烧一致、从而获得可评估的压力曲线，密闭爆发器药室中的装填密度不得超过某一最大值。该最大值本身取决于所用发射药的比爆热 **Qex**。根据 //Gallwitz// 的研究，经验表明其值约为 **delta * Qex = 545 kcal/dm³**。(("Explosivstoffe", J. Köhler, R. Meyer, ISBN: 9783527660070))
+
+==原始数据与处理==
+**但在实践中**，由于普遍存在且不可避免的数据散布，必须以不同的装填密度进行多次测量。比能量和余容随后通过线性回归确定。各次测量值的倒数构成数值对。回归直线的斜率给出比能量 **F_se** 的倒数，由此可确定余容 **b**。
+
+测量中记录的是压力随时间变化的函数，其中 **z(t)** 为已转化装药量的比例。如前所述，这里的问题在于信号不可避免的散布和噪声：
+
+{{zh:media::propellant-closed-vessel-data-processing-1.png?40%&link}}
+
+记录的数据事后会进行分析和处理，例如使用 Savatsky-Golay 或 LOWESS 等滤波器。结果会因所用的滤波器及其参数而异。这正是 GRT 发射药模型中所用数值与制造商公布数值可能略有差异的原因，因为制造商在分析时可能使用不同的滤波器或参数。
+
+{{zh:media::propellant-closed-vessel-data-processing-2.png?40%&link}}
+
+如果使用燃烧定律代替 **z(t)**，则可以按//动态活度//与//形状函数// **phi(z)** 的乘积来求解（见上图/图示的 Y 轴）。
+<code>
+( Ba * phi(z) ) / p0 = (ppunkt(t) / p(t)) * 
+( (1- b*z(t)*delta - (1-z(t))*delta/pc)² / (delta * F_se * (1-delta/pc)) )
+</code>
+**b** 为余容，**delta** 为发射药质量与药室容积之比 **mc/V_mb**，**pc** 为发射药物质的密度（质量密度）。
+
+====温度对发射药的影响====
+{{ zh:media::propellant-temperature-coefficients.png?40%&link}}
+**在 GRT 中，发射药温度影响引起的燃烧行为变化**用温度系数表示，温度系数分别表示低于和高于默认温度 21°C 的范围（见右图，非等比例）。
+
+用户可以在有限范围内将发射药温度从默认值更改，以考虑环境影响。
+
+一般来说，发射药的温度漂移由公认的分析方法和算法表示。
+((Karim et al. (2015). "Influence of Firing Temperature on Properties of Gun Propellants." ))
+((STANAG  4115.  1997.  "Definition  and  Determination  of Ballistic  Properties  of  Gun  Propellants. North  Atlantic Council."))
+((STANAG  4489.  1999.  "Explosives,  Impact  Sensitivity Tests. NATO Standardization Agreement." ))
+((Clifford,  W.  1982.  "Temperature  Sensitivity  of  Aircraft Cannon Propellants. AFATL-TR-82-72." )) 
+一些制造商会根据专门测量为其发射药提供温度系数，这可以改善结果；否则将使用内部默认系数。
+
+**为确定这些系数，**需在给定温度下重复活度测量，然后按如下方式计算：
+
+==低温温度系数（tcc）==
+<code>
+tcc = (Ba(T= +21°C) - Ba(T= -20°C)) / (21+20)
+</code>
+==高温温度系数（tch）==
+<code>
+tch = (Ba(T= +60°C) - Ba(T= +21°C)) / (60-21)
+</code>
+
+
+====射击时的能量====
+发射药装药转化释放的化学能，在射击时基本上分为以下几个部分：
+
+  * 弹头的平动能量
+  * 弹头的旋转能量
+  * 火药燃气的流动能量
+  * 火药燃气的内能
+  * 枪管、弹头和弹壳上的热损失
+  * 燃气流失、摩擦与声学（振动行为）损失
+  * 克服拔弹阻力的功
+  * 将弹头压入阳线的功
+  * 武器后坐部件的能量
+  * （半）自动武器自动循环所需的能量
+
+====损失====
+**弹头上的摩擦损失**在算法中通过模型表示，摩擦阻力主要由弹头制造商提供（如有）。有经验的用户可以手动调整。
+
+**火药燃气的流动能量**可以通过在待加速的弹头质量上加入一定比例的装药量（携带系数，"Sebert 系数"）来计算。与物理学其他领域的通常做法一样，这里计算的是有效质量。其他能量损失也可以在有效质量中考虑，例如热传导造成的能量损失。
+
+**由结构条件造成的燃气流失**（例如转轮手枪的转轮间隙）可达 **20% 之多**。有经验的用户可以在向导的帮助下进行设定。
+
+**武器后坐部分消耗的能量**以及自动武器的推进能量被忽略不计。
+
+=====数据=====
+GRT 提供的口径、弹头和发射药数据由 GRT 开发团队和社区耗费大量精力创建并手工录入，其中发射药数据以相应制造商提供的测量数据为基础，也包括 GRT 实验室和社区基于自有测量已经确定并将继续确定的数据。
+
+特别感谢以下公司（按字母顺序）：
+
+  * [[https://www.brownells.com|Brownells - https://www.brownells.com]]
+  * [[https://www.explosia.cz|Explosia - https://www.explosia.cz]]
+  * [[https://www.reload-swiss.com|Reload Swiss - https://www.reload-swiss.com]]
+  * [[https://www.rheinmetall.com|RHEINMETALL - https://www.rheinmetall.com]]
+  * [[https://www.ruag.com|RUAG - https://www.ruag.com]]
+  * [[https://www.somchem.com|SOMCHEM - https://www.somchemreload.com/]]
+  * [[https://www.vihtavuori.com|VIHTAVUORI - https://www.vihtavuori.com]]
+
+====重要提示====
+**由于制造波动和公差，务必将所提供的数据与实际情况进行对比，并在必要时进行调整。特别是：弹壳容积和弹头长度必须始终加以检查和实测。对所提供数据的正确性不作任何保证！**

@@ -1,0 +1,43 @@
+======工具栏======
+主菜单的设计力求一目了然，因此这里仅对工具栏图标作更详细的说明：
+
+{{zh:media::toolbar.png}}
+
+工具栏用于快速调用最常用的功能，位于主菜单下方。
+
+将鼠标悬停在图标上即可查看其功能的简要说明。所有图标功能也都可以通过主菜单使用。
+
+====功能（从左至右）====
+===文件功能===
+**//（“文件”菜单中的功能）//**
+  * {{zh:media::icon:icn_mono_document_empty_32x32.png}}新建文件（装药数据）
+  * {{zh:media::icon:icn_mono_folder_page_32x32.png}}在新标签页中加载/打开已有文件
+  * {{zh:media::icon:icn_mono_folder_win_32x32.png}}在全新窗口中加载/打开已有文件
+  * {{zh:media::icon:icn_mono_refresh_32x32.png}}重新读取当前文件，未保存的修改将被丢弃
+  * {{zh:media::icon:icn_mono_disk_32x32.png}}保存当前文件
+  * {{zh:media::icon:icn_mono_disk_go_32x32.png}}将当前文件另存为新名称
+
+===当前文件（装药数据）的功能===
+**//（“装药数据”菜单中的功能）//**
+  * {{zh:media::icon:icn_mono_file_pdf_32x32.png}}打开标准化机构（如 CIP）提供的 PDF 文档。
+    * **注意**：只有当该文档过去尚未下载并保存到本地时，才会在手动确认后从该机构的网站下载 PDF 文档。
+    * **下载/查看过 PDF 文档后**，它会被保存在 GRT 程序目录下的 //**/pdf**// 文件夹中，下次调用时即可直接使用。
+  * {{zh:media::icon:icn_mono_cartridge_drawing_32x32.png}}打开枪弹图的大视图。**枪弹图**显示**原始规范**及全部**原始尺寸**。
+  * {{zh:media::icon:icn_mono_textdoc_dia_32x32.png}}打开[[zh:doku:report|结果报告]]（可打印与自定义）。
+
+===通用工具===
+**//（“工具”菜单中的功能）//**
+  * {{zh:media:icon:icn_mono_caliber_db_32x32.png}}[[zh:doku:dbcaliber|口径数据库]]
+  * {{zh:media:icon:icn_mono_projectile_db_32x32.png}}[[zh:doku:dbprojectile|弹头数据库]]
+  * {{zh:media:icon:icn_mono_propellant_db_32x32.png}}[[zh:doku:dbpropellant|发射药数据库]]
+
+  * {{zh:media::icon:icn_mono_calculator_32x32.png}}[[zh:doku:unitcalculator|计量单位换算]]
+  * {{zh:media::icon:icn_mono_table_heatmap_32x32.png}}[[zh:doku:burnratechart|发射药相对燃速对照表]]
+  * {{zh:media::icon:icn_mono_laufprofil_32x32.png}}[[zh:doku:assist-aeffcalculator|口径/枪管有效截面积计算器]]
+  * {{zh:media::icon:icn_mono_cannon_32x32.png}}[[zh:doku:bpcalculator|黑火药计算器]]
+  * {{zh:media:icon:icn_mono_target_holes_32x32.png}}[[zh:doku:shotgroup|弹着散布分析]]
+  * {{zh:media:icon:icn_mono_obt_32x32.png}}[[zh:doku:obtconcept|最优枪管时间（OBT）]]
+  * {{zh:media:icon:icn_mono_chart_propellant_32x32.png}}[[zh:doku:ppsearch|参数化发射药搜索与通用公差综合]]
+  * {{zh:media:icon:icn_mono_cartridge_draft_32x32.png}}[[zh:doku:cartridgedesigner|枪弹设计器]]
+===插件===
+标准工具栏图标之后，按加载顺序依次排列各插件的图标。

@@ -1,0 +1,18 @@
+====== 如何更新到较新的版本？ ======
+
+更新到较新的 GRT 版本非常简单：
+
+假设你正在使用的 GRT 位于硬盘上的 //"C:\GordonsReloadingTool\"// 文件夹：
+
+===更新步骤===
+==1. 如果 GRT 正在运行，请先关闭，然后备份你当前的 GRT 文件夹，以防出问题！==
+==2. 下载新版本：==
+{{zh:faq:media:faw-grt-update-1.png?direct&50%|}}
+
+==3. 解压压缩包：==
+{{zh:faq:media:faw-grt-update-2.png?direct&50%|}}
+
+==4. 把新（NEW）文件夹的内容复制并覆盖到工作（WORK）文件夹：==
+{{zh:faq:media:faw-grt-update-3.png?direct|}}
+
+==完成==
