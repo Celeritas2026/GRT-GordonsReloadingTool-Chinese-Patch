@@ -37,7 +37,7 @@ then just enter in BOTH attributes the same file.
     description    = "Miller 弹头陀螺稳定性计算插件"
     launch-windows = "GRT_Miller_Stability_Plugin.exe"
     launch-linux   = "grt_miller_stability_plugin"
-    launch-type    = "ondemand"
+    launch-type    = "onDemand"
     launch-args    = ""
     start-timeout  = "2.0"
     enabled        = "true"
