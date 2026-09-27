@@ -4,11 +4,6 @@
 
 为内弹道仿真软件 **GordonsReloadingTool (GRT)** 制作的简体中文汉化补丁。
 
-> GRT 是一款优秀的自由软件（免费但非开源），作者 Gordon 已不幸离世，软件停止更新、濒临失传。
-> 本仓库旨在为中文用户保存并延续这份工具的使用体验。愿逝者安息，软件长存。
-
-![主界面截图](docs/screenshot-main.png)
-
 ## 适用版本
 
 - **GordonsReloadingTool 2021.2030 (W11) V1.0**（请务必确认版本一致）
