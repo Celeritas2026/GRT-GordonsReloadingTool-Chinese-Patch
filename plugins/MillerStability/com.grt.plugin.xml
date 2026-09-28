@@ -35,7 +35,7 @@ then just enter in BOTH attributes the same file.
 	  version        = "0.1.0"
 	  provider       = "your.domain"
     description    = "Miller 弹头陀螺稳定性计算插件"
-    launch-windows = "GRT_Miller_Stability_Plugin.exe"
+    launch-windows = "MillerLauncher.exe"
     launch-linux   = "grt_miller_stability_plugin"
     launch-type    = "onDemand"
     launch-args    = ""
